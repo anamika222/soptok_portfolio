@@ -32,8 +32,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = [*]
-# settings.py এর নিচে এই লাইনটি যুক্ত করুন (রিয়্যাক্টকে ডেটা আদান-প্রদান করতে দেওয়ার জন্য)
+ALLOWED_HOSTS = ['*']
+# settings.py এর নিচে এই লাইনটি যুক্ত করুন (রিয়্যাক্টকে ডেটা আদান-প্রদান করতে দেওয়ার জন্য)
 CORS_ALLOW_ALL_ORIGINS = True
 
 # Application definition
